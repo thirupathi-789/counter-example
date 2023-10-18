@@ -1,3 +1,15 @@
-let h1El = document.createElement("h1");
-h1El.textContent = "Git hub";
-document.body.appendChild(h1El);
+let clearBtnEl = document.getElementById("clearBtn");
+let counterValueEl = document.getElementById("counterValue");
+
+let counter = 0;
+
+let uniqueId = setInterval( function() {
+    counter += 1;
+    counterValueEl.textContent = counter;
+}, 1000);
+
+
+clearBtnEl.onclick = () => {
+    clearInterval(uniqueId);
+    counterValueEl.textContent = "";
+}

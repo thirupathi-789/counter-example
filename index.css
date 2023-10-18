@@ -1,3 +1,10 @@
-p {
-    color:green;
+.heading {
+    font-family: "Roboto";
+    font-size: 24px;
+}
+
+.counter-value {
+    font-size: 36px;
+    font-weight: bold;
+    color: green;
 }
